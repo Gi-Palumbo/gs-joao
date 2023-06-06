@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta de Clientes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Consulta de Clientes</h1>
+  </header>
+
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="Buscar">
+    <select id="filterSelect">
+      <option value="sexo">Sexo</option>
+      <option value="nome">Nome</option>
+      <option value="email">Email</option>
+      <option value="endereco">Endereço</option>
+    </select>
+
+    <table id="customerTable">
+      <thead>
+        <tr>
+          <th>Sexo</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Endereço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas da tabela de consulta serão adicionadas dinamicamente aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="customer.js"></script>
+  <div class="container">
+    <a href="index.html" class="back-button">Voltar ao Menu Principal</a>
+  </div>
+</body>
+</html>
